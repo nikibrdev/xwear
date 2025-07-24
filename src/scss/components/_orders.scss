@@ -1,0 +1,54 @@
+@use 'mixins' as *;
+
+.orders {
+  border: 1px solid #e9eaee;
+  border-radius: 5px;
+  padding: 27px 26px 41px 31px;
+  background-color: var(--white-color);
+
+  &__title {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.30435;
+    color: #303030;
+  }
+
+  &__list {}
+
+  &__item {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr 170px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 18px 19px;
+    font-size: 14px;
+    line-height: 2.14286;
+    letter-spacing: 0.01em;
+    color: #333;
+
+    &:nth-child(even) {
+      background-color: #fbfbfb;
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  &__item-num {}
+
+  &__item-time {}
+
+  &__item-status {}
+
+  &__item-price {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.41176;
+    text-transform: uppercase;
+    color: #121214;
+  }
+}

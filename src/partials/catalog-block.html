@@ -1,0 +1,581 @@
+<section class="catalog">
+  <div class="container">
+    <div class="catalog__inner">
+      <aside class="catalog__aside filters">
+        <div class="filters__inner filters__inner--category">
+          <button class="filters__inner-btn filters__inner-btn--category btn-reset">
+            Категории
+          </button>
+          <div class="filters__item">
+            <h5 class="filters__item-title">Категории</h5>
+            <div class="filters__options filters__options--checkbox-hidden">
+              <label class="filters__option">
+                <input type="checkbox"> </input>
+                <span class="filters__option-content">Кроссовки</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox"> </input>
+                <span class="filters__option-content">Кеды</span>
+
+              </label>
+              <label class="filters__option">
+                <input type="checkbox"> </input>
+                <span class="filters__option-content">Лофферы</span>
+
+              </label>
+              <label class="filters__option">
+                <input type="checkbox"> </input>
+                <span class="filters__option-content">Сандали</span>
+
+              </label>
+              <label class="filters__option">
+                <input type="checkbox"> </input>
+                <span class="filters__option-content">Шлепки</span>
+
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="filters__inner filters__inner--other">
+          <button class="filters__inner-btn filters__inner-btn--filters btn-reset">
+            Открыть Фильтры
+          </button>
+          <div class="filters__inner-wrap" data-menu-overlay>
+            <div class="filters__overlay"></div>
+          </div>
+          <div class="filters__items" data-menu-filtres>
+            <div class="filters__item">
+              <h5 class="filters__item-title">Фильтр по цене</h5>
+              <div class="price-range__wrap">
+                <div class="price-range">
+                  <input type="number" placeholder="5" min="0" max="100000" id="input-0">
+                  <span class="price-range__label">₽</span>
+                  <div>-</div>
+                  <input type="number" placeholder="1000" min="0" max="100000" id="input-1">
+                  <span class="price-range__label">₽</span>
+                </div>
+                <div class="price-slider" id="range-slider"></div>
+              </div>
+            </div>
+            <div class="filters__item">
+              <h5 class="filters__item-title">Размеры (EU)</h5>
+              <div class="filters__options filters__options-grid filters__options--checkbox-hidden">
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>36</span>
+                </label>
+                <label class="filters__option  filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>36.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>37</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>37.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>38</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>38.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>39</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>39.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>40</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>40.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>41</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>41.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>42</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>42.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>43</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>43.5</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>44</span>
+                </label>
+                <label class="filters__option filters__option-size">
+                  <input type="checkbox"> </input>
+                  <span>44.5</span>
+                </label>
+              </div>
+            </div>
+            <div class="filters__item">
+              <h5 class="filters__item-title">Бренды</h5>
+              <div class="filters__options filters__options-scroll filters__options--checkbox-custom">
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Adidas</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Ammity</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>AppleGate</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Basic Fitness</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>BH Fitness</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Body Craft</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Bronze Gym </span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>BH Fitness</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Body Craft</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Bronze Gym </span>
+                </label>
+              </div>
+            </div>
+            <div class="filters__item">
+              <h5 class="filters__item-title">Модель</h5>
+              <div class="filters__options filters__options-scroll filters__options--checkbox-custom">
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 High</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 Low</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 Mid</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Humara</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 Acclimate</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 AJKO</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 High</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 High</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 Low</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Force 1 Mid</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Humara</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 Acclimate</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 AJKO</span>
+                </label>
+                <label class="filters__option">
+                  <input type="checkbox"> </input>
+                  <span>Air Jordan 1 High</span>
+                </label>
+              </div>
+            </div>
+            <div class="filters__item">
+              <h5 class="filters__item-title">Цвет</h5>
+              <div
+                class="filters__options filters__options--color filters__options-grid filters__options--checkbox-hidden">
+                <label class="filters__option filters__option-color">
+                  <input type="checkbox">
+                  <span>
+                    <div>
+                      <svg width="27" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" width="27" height="27" rx="13.5" fill="#CCCCCC" />
+                        <mask id="mask0_66_540" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                          width="28" height="27">
+                          <rect x="0.5" width="27" height="27" rx="13.5" fill="#CCCCCC" />
+                        </mask>
+                        <g mask="url(#mask0_66_540)">
+                          <rect x="-4" width="36" height="4" fill="#FE0000" />
+                          <rect x="-4" y="4" width="36" height="5" fill="#FD8C00" />
+                          <rect x="-4" y="9" width="36" height="4" fill="#FFE500" />
+                          <rect x="-4" y="13" width="36" height="5" fill="#109F0A" />
+                          <rect x="-4" y="18" width="36" height="4" fill="#0644B3" />
+                          <rect x="-4" y="22" width="36" height="5" fill="#C22EDC" />
+                        </g>
+                      </svg>
+                    </div>
+                    <div>Multicolor</div>
+                  </span>
+                  </input>
+                </label>
+                <label class="filters__option filters__option-color">
+                  <input type="checkbox">
+                  <span>
+                    <div style="color: blue; background-color: blueviolet;">
+                    </div>
+                    <div>COLOR</div>
+                  </span>
+                  </input>
+                </label>
+                <label class="filters__option filters__option-color">
+                  <input type="checkbox">
+                  <span>
+                    <div style="color: blue; background-color: rgb(8, 188, 98);">
+                    </div>
+                    <div>COLOR</div>
+                  </span>
+                  </input>
+                </label>
+                <label class="filters__option filters__option-color">
+                  <input type="checkbox">
+                  <span>
+                    <div style="background-color: #00f;">
+                    </div>
+                    <div>Синий</div>
+                  </span>
+                  </input>
+                </label>
+
+              </div>
+            </div>
+            <button class="filters__btn btn-reset">
+              <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7.49954L7.99954 0.5M8 7.49977L1.00046 0.50023" stroke="#2C2C2C" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <span>Сбросить все фильтры</span>
+            </button>
+            <button class="btn-reset filters__items-btn">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.8">
+                  <path d="M1 12.3164L12.3137 1.0027" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12.3164 12.3164L1.0027 1.0027" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="banner">
+          <a class="banner__link" href="#">
+            <div class="banner__img">
+              <img src="img/banner.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </aside>
+      <div class="catalog__body">
+        <div class="catalog__header">
+          <div class="catalog__header-box">
+            <h1 class="catalog__title title">Обувь</h1>
+            <div class="catalog__select-box">
+              <span class="catalog__select-label">Сортировать по </span>
+              <select class="catalog__select input-reset" data-trigger>
+                <option value="">От дешевых к дорогим</option>
+                <option value="">От дорогих к дешевым</option>
+                <option value="">По дате добавления</option>
+              </select>
+            </div>
+          </div>
+          <div class="catalog__label">
+            <div class="catalog__label-num">1 746</div>
+            <div class="catalog__label-text">товаров</div>
+          </div>
+        </div>
+        <div class="catalog__grid">
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/13.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/14.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/15.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra Flyknit
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/16.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/17.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/18.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/19.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/20.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/21.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/22.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/23.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/24.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/13.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/14.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/15.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra Flyknit
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/16.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/17.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Air Force 1 Ultra
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/18.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/19.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/20.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img">
+              <img src="img/catalog/21.jpg" alt="">
+            </div>
+            <h3 class="product-card__title">
+              Nike Court Zoom Cage 2
+            </h3>
+            <div class="product-card__price">от<span>3 129</span>₽</div>
+          </article>
+        </div>
+        <div class="pagination">
+          <button class="pagination__btn btn-reset">
+            <svg width="60" height="26" viewBox="0 0 60 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.5404 12.5404C18.2865 12.7942 18.2865 13.2058 18.5404 13.4596L22.677 17.5962C22.9308 17.85 23.3424 17.85 23.5962 17.5962C23.85 17.3424 23.85 16.9308 23.5962 16.677L19.9192 13L23.5962 9.32304C23.85 9.0692 23.85 8.65765 23.5962 8.40381C23.3424 8.14997 22.9308 8.14997 22.677 8.40381L18.5404 12.5404ZM41 13V12.35L19 12.35V13V13.65L41 13.65V13Z"
+                fill="black" />
+              </g>
+            </svg>
+          </button>
+          <ul class="pagination__list list-reset">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">...</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">124</a>
+            </li>
+          </ul>
+          <button class="pagination__btn btn-reset">
+            <svg width="61" height="36" viewBox="0 0 61 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60.65" height="35.5732" transform="translate(0 0.214844)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M37.323 22.5987L41.4596 18.4621C41.7135 18.2083 41.7135 17.7967 41.4596 17.5429L37.323 13.4063C37.0692 13.1525 36.6576 13.1525 36.4038 13.4063C36.15 13.6601 36.15 14.0717 36.4038 14.3255L39.4308 17.3525L19 17.3525V18.6525L39.4308 18.6525L36.4038 21.6794C36.15 21.9333 36.15 22.3448 36.4038 22.5987C36.6576 22.8525 37.0692 22.8525 37.323 22.5987Z"
+                fill="#121214" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

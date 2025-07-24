@@ -1,0 +1,24 @@
+@use 'mixins' as *;
+
+.soc1al {
+  &__title {
+    margin: 0;
+    margin-bottom: 3px;
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 2.33333;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  &__list {
+    display: flex;
+    gap: 9px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+}

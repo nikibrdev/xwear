@@ -1,0 +1,24 @@
+@use 'mixins' as *;
+
+[data-faq-content] {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+[data-faq-toggle] {
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+[data-faq-toggle]::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+[data-faq-toggle].is-active::after {
+  content: '-';
+}

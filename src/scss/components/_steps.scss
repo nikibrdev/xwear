@@ -1,0 +1,148 @@
+@use 'mixins' as *;
+
+.steps {
+  position: relative;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  @include mobile {
+    margin-bottom: 35px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1541px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    border-radius: 7px;
+    color: var(--white-color);
+    background: linear-gradient(73deg, #0d99f8 0%, #21a0f8 4.58%, #54b5ff 27.35%, #0dbbf8 80.82%, #0ddbf8 100%);
+  }
+
+  &__content {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    max-width: 738px;
+
+    @include tablet {
+      margin: 36px 20px 45px;
+    }
+
+    @include mobile {
+      margin: 33px 11px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 1.23529;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 34px;
+    }
+
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 19px;
+    line-height: 1.68421;
+
+    span {
+      font-weight: 700;
+    }
+
+    @include tablet {
+      font-size: 17px;
+    }
+
+    @include mobile {
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    @include tablet {
+      display: block;
+      margin: 0 auto;
+      max-width: fit-content;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 41px;
+    gap: 58px;
+
+    @include tablet {
+      margin-bottom: 35px;
+      gap: 20px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 23px;
+
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+      gap: 16px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 600;
+    line-height: 1.375;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  &__img {
+    margin-top: -120px;
+    margin-bottom: -150px;
+
+
+    img {
+      max-width: fit-content;
+    }
+
+    @include big-desktop {
+      display: none;
+    }
+
+  }
+}

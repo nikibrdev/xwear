@@ -1,0 +1,49 @@
+@use 'mixins' as *;
+
+.placement {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 780px 1fr;
+    gap: 30px;
+  }
+
+  &__item {
+    align-self: self-start;
+    border: 1px solid #e9eaee;
+    border-radius: 5px;
+    padding: 28px 40px;
+  }
+
+  &__item-title {
+    width: 100%;
+
+  }
+
+  &__item-btn {
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 23px 27px;
+    width: 100%;
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.66667;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: #121214;
+  }
+}
+
+.address-form {
+  &__item--50 {
+    width: 47%;
+  }
+
+}

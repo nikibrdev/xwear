@@ -1,0 +1,40 @@
+@use 'mixins' as *;
+
+.product-card {
+  max-width: 318px;
+
+  @media (width <= 700px){
+    max-width: 160px;
+  }
+
+  &__price {
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #3c3c3c;
+
+    span {
+      padding: 0 3px;
+      font-size: 20px;
+    }
+  }
+
+  &__favorite {
+    position: absolute;
+    right: 25px;
+    top: 33px;
+
+    &--active{
+      border-radius: 50%;
+      background-color: var(--accent-color);
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+
+    .product-card__title{
+      color: var(--accent-color);
+    }
+  }
+}

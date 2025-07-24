@@ -1,0 +1,42 @@
+@use 'mixins' as *;
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    flex-basis: 433px;
+    border-radius: 5px;
+    padding: 14px 22px 16px;
+    background-color: #f9f9f9;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label-text {
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  &__input {
+    color: #424347;
+    background-color: #f9f9f9;
+
+  }
+
+  &__btn {
+    border-radius: 5px;
+    padding: 23px 50px;
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.66667;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: #121214;
+  }
+}

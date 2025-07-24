@@ -1,0 +1,102 @@
+@use 'mixins' as *;
+
+.hero {
+  margin: 50px 0 80px;
+
+  &__container {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1561px;
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__slide-img {
+    overflow: hidden;
+    border-radius: 7px;
+  }
+
+  &__content {
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    z-index: 1000;
+    max-width: 571px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 1.23529;
+    text-transform: uppercase;
+    color: #171819;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 19px;
+    line-height: 1.68421;
+  }
+
+  &__slider-btns{
+    position: absolute;
+    left: 90px;
+    top: 518px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 67px;
+
+  }
+
+  &__slider-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F0F2F6;
+    border-radius: 100%;
+    width: 67px;
+    height: 67px;
+    background-color: var(--white-color);
+    cursor: pointer;
+
+    &:hover{
+      background-color: #F0F2F6;
+    }
+  }
+
+  .swiper {
+    max-height: 631px;
+  }
+
+  .swiper-wrapper {
+    flex-direction: column;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets{
+    right: 75px;
+  }
+
+  .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+    background-color: var(--white-color);
+    opacity: 1;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 45px 0;
+
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    scale: 1.5;
+  }
+}

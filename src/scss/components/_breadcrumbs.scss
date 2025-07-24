@@ -1,0 +1,39 @@
+@use 'mixins' as *;
+
+.breadcrumbs {
+  margin: 14px 0 48px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  text-align: center;
+  color: #8c8f96;
+
+  ul {
+    display: flex;
+    gap: 36px;
+  }
+
+  li {
+    position: relative;
+
+    &::after {
+      content: '/';
+      position: absolute;
+      right: -20px;
+    }
+
+    &:last-child {
+      color: var(--txt-color);
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}

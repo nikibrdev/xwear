@@ -1,0 +1,79 @@
+@use 'mixins' as *;
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 13px;
+
+  &__wrapper {
+    max-width: 433px;
+
+    @include small-tablet {
+      max-width: 324px;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.30435;
+    text-transform: none;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.66667;
+    color: #303030;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    position: relative;
+    font-family: var(--second-family);
+    font-weight: 800;
+    line-height: 1.07143;
+    text-transform: uppercase;
+    color: var(--black-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 91px;
+      height: 3px;
+      background-color: #49d0ff;
+
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+
+  time {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 2.09091;
+    text-align: right;
+    text-transform: uppercase;
+    color: #8c8f96;
+  }
+}

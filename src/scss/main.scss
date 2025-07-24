@@ -1,0 +1,33 @@
+// базовые подключения
+@use "vars";
+@use "mixins";
+@use "fonts";
+@use "settings";
+
+// подключения компонентов страницы
+@use "./components/nav";
+@use "./components/accordion";
+@use "./components/burger";
+@use "./components/breadcrumbs";
+@use "./components/social";
+@use "./components/header";
+@use "./components/hero";
+@use "./components/home-slider";
+@use "./components/product-card";
+@use "./components/steps";
+@use "./components/about";
+@use "./components/blog-card";
+@use "./components/catalog";
+@use "./components/product";
+@use "./components/cost";
+@use "./components/faq";
+@use "./components/account";
+@use "./components/orders";
+@use "./components/profile";
+@use "./components/order";
+@use "./components/placement";
+@use "./components/recovery";
+@use "./components/basket";
+@use "./components/contacts";
+@use "./components/footer";
+@use "media";

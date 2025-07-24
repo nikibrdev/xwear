@@ -1,0 +1,201 @@
+<section class="cost">
+  <div class="container cost__wrap">
+    <div class="cost__inner">
+      <div class="cost__header">
+        <h1 class="cost__title">
+          Рассчитать стоимость
+        </h1>
+        <p class="cost__text">
+          Мы ежедневно добавляем новые товары на сайт, но если вам не удалось найти то, что искали, вы всегда можете
+          воспользоваться автоматическим расчетом стоимость заказа на маркетплейсе <strong>Poizon</strong> , включая
+          комиссию сервиса и
+          доставку. Если у вас еще нет приложения Poizon, тогда можете посмотреть статью ниже. В приложении есть любые
+          кроссовки и одежда <strong>дешевле на 40%</strong> чем в РФ.
+        </p>
+        <p class="cost__text">
+          Если вы не хотите устанавливать приложение, вы всегда можете написать нам в Telegram или WhatsApp, какую вещь
+          хотите купить. Для этого напишите ее название или пришлите фотографию к нам в чат. Наши операторы сами найдут
+          нужный вам товар и рассчитают его стоимость.
+        </p>
+      </div>
+      <div class="tabs cost-tabs" data-tabs="tab">
+        <ul class="list-reset tabs__nav cost-tabs__nav">
+          <li class="tabs__nav-item cost-tabs__item">
+            <button class="btn-reset tabs__nav-btn cost-tabs__nav-btn" type="button">
+              Калькулятор
+            </button>
+          </li>
+          <li class="tabs__nav-item cost-tabs__item">
+            <button class="btn-reset tabs__nav-btn cost-tabs__nav-btn" type="button">
+              Написать менеджеру
+            </button>
+          </li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <div class="calc">
+              <form action="#" class="calc__form">
+                <div class="calc__form-item">
+                  <h3 class="calc__form-title">
+                    Ссылка на товар в Poizon
+                  </h3>
+                  <label class="calc__form-label">
+                    <span class="calc__form-label-text">
+                      Вставьте ссылку сюда:
+                    </span>
+                    <input type="text" name="link" class="input-reset calc__form-input" placeholder="https://">
+                  </label>
+                </div>
+                <div class="calc__form-item">
+                  <h3 class="calc__form-title">
+                    Размер
+                  </h3>
+                  <label class="calc__form-label">
+                    <span class="calc__form-label-text">
+                      Укажите размер:
+                    </span>
+                    <input type="number" name="size" class="input-reset calc__form-input" placeholder="43">
+                  </label>
+                </div>
+                <div class="calc__form-item">
+                  <h3 class="calc__form-title">
+                    Цена, ¥
+                  </h3>
+                  <label class="calc__form-label">
+                    <span class="calc__form-label-text">
+                      Укажите цену товара:
+                    </span>
+                    <input type="number" name="price" class="input-reset calc__form-input" placeholder="499">
+                  </label>
+                </div>
+                <div class="calc__form-item">
+                  <h3 class="calc__form-title">
+                    Выберите категорию
+                  </h3>
+                  <p class="calc__form-text">
+                    Выберите категорию товара для того, чтобы мы смогли правильно рассчитать цену доставки.
+                  </p>
+                  <label class="calc__form-label">
+                    <select name="category" id="" class="js-choice calc__form-select" data-trigger>
+                      <option value="Выбрать категорию товара">Выбрать категорию товара</option>
+                      <option value="Одежда">Одежда</option>
+                      <option value="Обувь">Обувь</option>
+                      <option value="Аксессуары">Аксессуары</option>
+                      <option value="Бренды">Бренды</option>
+                    </select>
+                  </label>
+                </div>
+                <button class="btn-reset calc__form-btn link-btn">Рассчитать стоимость</button>
+              </form>
+              <div class="calc__bottom">
+                <div class="calc__label">Итоговая стоимость</div>
+                <div class="calc__price">
+                  <div class="calc__price-num">531</div>
+                  <div class="calc__price-label">¥</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="manager">
+              <div class="manager__item">
+                <h3 class="manager__title">
+                  Напишите нам в мессенджеры
+                </h3>
+                <ul class="manager__solial-list list-reset">
+                  <li class="manager__solial-item">
+                    <a class="manager__solial-link" href="#">
+                      <div class="manager__solial-img">
+                        <img src="img/icons/tg.svg" alt="">
+                      </div>
+                      <span class="manager__solial-text">Написать в Telegram</span>
+                    </a>
+                  </li>
+                  <li class="manager__solial-item">
+                    <a class="manager__solial-link" href="#">
+                      <div class="manager__solial-img">
+                        <img src="img/icons/wa.svg" alt="">
+                      </div>
+                      <span class="manager__solial-text">Написать в whatsapp</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="manager__item">
+                <h3 class="manager__title">
+                  или заполните форму:
+                </h3>
+                <form action="#" class="manager__form">
+                  <div class="manager__form-item">
+                    <label class="manager__form-label">
+                      <span class="manager__form-label-text">Введите название товара:</span>
+                      <input type="text" name="Название товара" class="input-reset manager__form-input"
+                        placeholder="Например кроссовки Nike Air Max">
+                    </label>
+                  </div>
+                  <div class="manager__form-item">
+                    <label class="manager__form-label">
+                      <span class="manager__form-label-text">Размер:</span>
+                      <input type="text" name="Размер" class="input-reset manager__form-input"
+                        placeholder="Например EU 38,5">
+                    </label>
+                  </div>
+                  <div class="manager__form-item">
+                    <label class="manager__form-label">
+                      <span class="manager__form-label-text">Ваше имя:</span>
+                      <input type="text" name="Имя" class="input-reset manager__form-input" placeholder="Введите имя">
+                    </label>
+                  </div>
+                  <div class="manager__form-item">
+                    <label class="manager__form-label">
+                      <span class="manager__form-label-text">Номер телефона:</span>
+                      <input type="text" name="Телефон" class="input-reset manager__form-input"
+                        placeholder="+7 (000) 000 - 00 - 00">
+                    </label>
+                  </div>
+                  <div class="manager__form-item">
+                    <label class="manager__form-label">
+                      <span class="manager__form-label-text">Email адрес:</span>
+                      <input type="email" name="Имя" class="input-reset manager__form-input"
+                        placeholder="example@myemail.com">
+                    </label>
+                  </div>
+                  <div class="manager__form-item manager__form-item--file">
+                    <label class="manager__form-label manager__file-btn">
+                      <input type="file" name="Фото" class="input-reset manager__input-file">
+                      <span class="manager__form-label-text">
+                        <img loading="lazy" src="img/icons/file.svg" class="manager__form-label-img" width="13" height="15" alt="">
+                      </span>
+                      <span class="manager__form-label-text">Прикрепите фото товара</span>
+                    </label>
+                  </div>
+                  <div class="manager__form-box">
+                    <button class="btn-reset manager__form-btn link-btn">отправить заявку</button>
+                    <span class="manager__form-privacy">
+                      Нажимая кнопку ”Отправить заявку” вы соглашаетесь с <a class="manager__form-privacy-link"
+                        href="#">Политикой конфиденциальности</a>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cost__banner">
+      <div class="cost__banner-content">
+        <div class="cost__banner-title">
+          Как установить приложение Poizon
+        </div>
+        <div class="cost__banner-text">
+          Подробная, пошаговая инструкция по установке приложения Poizon
+        </div>
+        <a class="cost__banner-link" href="#">Читать полностью</a>
+      </div>
+      <div class="cost__banner-img">
+        <img src="img/cost.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+@use 'mixins' as *;
+
+.faq {
+  margin-bottom: 107px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 28px;
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 1.35484;
+    text-transform: uppercase;
+    color: #121214;
+  }
+
+  .product {
+    &__faq {
+      max-width: 100%;
+    }
+
+    &__faq-title {
+      margin-top: 31px;
+    }
+
+  }
+}

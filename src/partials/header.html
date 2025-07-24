@@ -1,0 +1,65 @@
+<header class="header">
+  <div class="header__inner container">
+    <a class="logo header__logo" href="/">
+      <img src="img/logo.svg" alt="logo">
+    </a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+    </button>
+    <nav class="nav" title="Основное меню навигации" data-menu>
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Одежда</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Обувь</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Аксессуары</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Бренды</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Расчет стоимости</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Информация
+          </a>
+          <ul class="nav__sublist list-reset">
+            <li class="nav__sublist-item"><a href="#" class="nav__sublist-link">Наш блог</a></li>
+            <li class="nav__sublist-item"><a href="#" class="nav__sublist-link">Наши контакты</a></li>
+            <li class="nav__sublist-item"><a href="#" class="nav__sublist-link">Доставка</a></li>
+            <li class="nav__sublist-item"><a href="#" class="nav__sublist-link">Оплата</a></li>
+            <li class="nav__sublist-item"><a href="#" class="nav__sublist-link">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <form class="header__search-form" action="#" method="get">
+        <input class="header__search-input input-reset" type="text" placeholder="Поиск по каталогу товаров "
+          aria-label="Поиск по каталогу товаров">
+
+        <button class="header__search-btn btn-reset" type="button" aria-label="Открыть поиск">
+          <svg class="header__search-icon icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__favorite">
+        <button class="header__favorite-btn btn-reset">
+          <svg class="header__favorite-icon icon">
+            <use xlink:href="img/sprite.svg#favorite"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__profile">
+        <button class="header__profile-btn btn-reset">
+          <svg class="header__profile-icon icon">
+            <use xlink:href="img/sprite.svg#profile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__basket">
+        <button class="header__basket-btn btn-reset">
+          <svg class="header__basket-icon icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </button>
+        <div class="header__basket-price">11 899 ₽</div>
+        <div class="header__basket-counter"><span>7</span></div>
+      </div>
+    </div>
+  </div>
+</header>

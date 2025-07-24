@@ -1,0 +1,119 @@
+@use 'mixins' as *;
+
+.footer {
+  padding: 45px 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: #dcdce0;
+  background-color: var(--black-color);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 9px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.86667;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  &__menu-item {
+    margin-bottom: 9px;
+  }
+
+  &__menu-link {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  &__mail {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  &__phone {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white-color);
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.86667;
+    color: #dcdce0;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 7px;
+  }
+
+  &__form-input {
+    color: var(--white-color);
+    background-color: var(--black-color);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 2.15385;
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  &__form-btn {
+    display: block;
+    border-radius: 100%;
+    width: 29px;
+    height: 29px;
+    background-color: var(--white-color);
+  }
+
+  &__form-text {
+    max-width: 274px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    opacity: 0.4;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 260px;
+  }
+
+  &__copy {
+    margin-right: auto;
+  }
+
+  &__policy {
+    margin-right: 42px;
+  }
+
+  &__policy-link {
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.63636;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #707076;
+    text-decoration-skip-ink: none;
+  }
+}
+
+
